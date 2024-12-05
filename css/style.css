@@ -1,0 +1,114 @@
+:root {
+  --color-fire-opal: #ea5454;
+  --color-medium-turquoise: #44d3d2;
+  --color-pastel-orange: #fcae4a;
+  --color-blue-jeans: #549ef2;
+  --color-gray-blue: #4d4f62;
+  --color-fa: #fafafa;
+  --color-white: #fff;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.text-36 {
+  font-size: 36px;
+  line-height: 54px;
+  letter-spacing: 0.25px;
+}
+
+.text-15 {
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0.1px;
+}
+
+.text-13 {
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.09px;
+}
+
+.text-20 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+body {
+  padding-block-start: 80px;
+  background-color: var(--color-fa);
+  color: var(--color-gray-blue);
+}
+
+hgroup h1,
+hgroup p {
+  max-width: 540px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1110px;
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+}
+
+h1 span {
+  display: block;
+}
+
+.cards section {
+  width: 350px;
+  height: 250px;
+  background-color: var(--color-white);
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  border-radius: 8px;
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cards section::before {
+  content: "";
+  width: inherit;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.cards section:first-child::before {
+  background-color: var(--color-medium-turquoise);
+}
+
+.cards section:nth-child(2)::before {
+  background-color: var(--color-fire-opal);
+}
+
+.cards section:nth-child(3)::before {
+  background-color: var(--color-pastel-orange);
+}
+
+.cards section:last-child::before {
+  background-color: var(--color-blue-jeans);
+}
