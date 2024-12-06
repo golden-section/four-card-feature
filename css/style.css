@@ -56,7 +56,7 @@ body {
   color: var(--color-gray-blue);
 }
 
-main {
+.four-card-feature {
   row-gap: 64px;
 }
 
@@ -65,13 +65,9 @@ hgroup {
   row-gap: 16px;
 }
 
-hgroup h1,
+hgroup h2,
 hgroup p {
   text-align: center;
-}
-
-.container {
-  width: 1110px;
 }
 
 .flex {
@@ -80,16 +76,17 @@ hgroup p {
   align-items: center;
 }
 
-h1 span {
+h2 span {
   display: block;
 }
 
 .cards {
+  width: 1110px;
   min-height: 530px;
   position: relative;
 }
 
-.cards section {
+.cards article {
   width: 350px;
   height: 250px;
   background-color: var(--color-white);
@@ -105,7 +102,7 @@ h1 span {
   row-gap: 6px;
 }
 
-.cards section::before {
+.cards article::before {
   content: "";
   width: inherit;
   height: 4px;
@@ -114,42 +111,42 @@ h1 span {
   top: 0;
 }
 
-.cards section:first-child::before {
+.cards article:first-child::before {
   background-color: var(--color-medium-turquoise);
 }
 
-.cards section:nth-child(2)::before {
+.cards article:nth-child(2)::before {
   background-color: var(--color-fire-opal);
 }
 
-.cards section:nth-child(3)::before {
+.cards article:nth-child(3)::before {
   background-color: var(--color-pastel-orange);
 }
 
-.cards section:last-child::before {
+.cards article:last-child::before {
   background-color: var(--color-blue-jeans);
 }
 
-.cards section:first-child {
+.cards article:first-child {
   top: 50%;
   transform: translateY(-50%);
   background-image: url(../images/icon-supervisor.svg);
 }
 
-.cards section:nth-child(2) {
+.cards article:nth-child(2) {
   left: 50%;
   transform: translateX(-50%);
   background-image: url(../images/icon-team-builder.svg);
 }
 
-.cards section:nth-child(3) {
+.cards article:nth-child(3) {
   left: 50%;
   bottom: 0;
   transform: translate(-50%);
   background-image: url(../images/icon-karma.svg);
 }
 
-.cards section:last-child {
+.cards article:last-child {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
